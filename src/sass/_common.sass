@@ -1,0 +1,113 @@
+// # SHORT HOWTO
+// ## Sprites
+//     .whatever
+// 			+s(codedby)
+// ## gradient example
+//     	+g(#232323, #5c5c5c);
+//	   horizontal
+//     	+gh(#232323, #5c5c5c);
+// ## making bw-images
+//     img
+//			@extend %gray
+// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
+//     +r(320)
+//			display: none
+// +max-screen(1000), +iphone5, +iphone4, +ipad-retina, +ipad, +hdpi - also available
+//
+// ## use cycles
+//     @for $i from 1 through 3
+//       .item-#{$i}
+//			width: 2em * $i;
+//     @each $s in a,b,c
+// 	    	#{$s}
+//				display: none
+// ## fonts
+// Save fonts to /src/fonts
+// +font(book, cytiapro-black-webfont)
+// and create mixin
+// =book
+// 	font-family: "book", Arial, sans-serif
++font(futura-book, FuturaNewBook)
++font(futura-demi, FuturaNewDemi)
++font(futura-medium, FuturaNewMedium)
++font(futura-heavy, FuturaNewHeavy)
+
+// variable
+
+=FB
+	font-family: 'futura-book', Arial, sans-serif
+=FD
+	font-family: 'futura-demi', Arial, sans-serif
+=FM
+	font-family: 'futura-medium', Arial, sans-serif
+=FH
+	font-family: 'futura-heavy', Arial, sans-serif
+
+$white: #fff
+$black: #000
+$light-black: #1b1b1b
+$red: #f11c1c
+$body-gray: #fafafa
+$light-gray: #f8f8f8
+$gray: #ececec
+$gray-line: #efefef
+$blue: #67cef6
+$blue-tel: #8fd3f1
+$light-blue: #97e0ff
+$dark-blue: #44637b
+$dark-blue-txt: #004454
+$blue-form-txt: #7c868e
+$sky-blue: #becfdd
+
+// common blocks
+body
+	position: relative
+	+FB
+	font-size: 17px
+	line-height: 1
+	background-color: $body-gray
+
+.out
+	position: relative
+	max-width: 1600px
+	min-width: 320px
+	margin: auto
+	box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.06)
+	background-color: $light-gray
+
+a
+	text-decoration: none
+	color: inherit
+
+h3
+	+FD
+	font-size: 30px
+	line-height: 1
+	text-align: center
+
+.icon
+	font-size: 27px
+	vertical-align: middle
+	margin-right: 10px
+
+.btn-gift
+	padding: 0 38px
+	height: 50px
+	+FD
+	font-size: 11px
+	letter-spacing: 1px
+	text-transform: uppercase
+	color: $dark-blue-txt
+	background-color: $white
+	transition: all .1s ease
+	span
+		vertical-align: middle
+	.icon-gift
+		font-size: 18px
+		color: $red
+	&:hover,
+	&:active
+		background-color: $red
+		color: $white
+		.icon-gift
+			color: $white

@@ -1,0 +1,88 @@
+// begin footer
+.footer
+  width: 100%
+  min-height: 534px
+  background: url(../img/bg-footer.jpg) center/cover no-repeat
+  +clr
+  text-align: center
+  padding: 92px 0 0 0
+  &__txt,
+  &__form
+    display: inline-block
+    text-align: left
+    vertical-align: top
+  &__txt
+    padding-right: 85px
+  &__btn
+    width: 100%
+    height: 50px
+  &__list
+    width: 100%
+    padding-top: 40px
+    color: $sky-blue
+    +FB
+    font-size: 18px
+    line-height: 1.8
+  &__link
+    transition: all .1s linear
+    &:hover
+      color: $white
+      text-decoration: underline
+  &__title
+    padding-bottom: 9px
+    +FD
+    font-size: 14px
+    color: $white
+    text-transform: uppercase
+    letter-spacing: 1px
+.form
+  position: relative
+  max-width: 370px
+  min-height: 350px
+  padding: 0 34px 55px 34px
+  background-color: $blue
+  &__title
+    width: 100%
+    line-height: 82px
+    text-align: center
+    +FD
+    font-size: 25px
+    color: $white
+  &__name,
+  &__mail,
+  &__msg
+    width: 100%
+    +FB
+    font-size: 17px
+    color: $blue-form-txt
+  &__name,
+  &__mail
+    margin-bottom: 17px
+    padding: 0 17px
+    height: 35px
+  &__msg
+    display: inline-block
+    height: 75px
+    border: none
+    resize: none
+    margin-bottom: 33px
+    padding: 12px 17px
+  &__btn
+    width: 100%
+    height: 55px
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    +FM
+    font-size: 11px
+    text-transform: uppercase
+    background-color: $dark-blue
+    color: $light-blue
+    transition: all .1s linear
+    &:hover
+      color: $white
+      box-shadow: inset 0px 0px 20px 1px rgba(255,255,255,0.5)
+    &:active
+      box-shadow: inset 0px -3px 6px 6px rgba(0,0,0,0.3)
+// end footer

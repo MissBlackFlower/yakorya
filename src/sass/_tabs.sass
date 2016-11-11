@@ -1,0 +1,85 @@
+.plan
+	min-height: 720px
+	width: 100%
+	background: url(../img/bg-plans.jpg) center/cover no-repeat
+	&__wrap
+		max-width: 1170px
+		margin: auto
+		padding-top: 110px
+	&__col
+		display: inline-block
+		vertical-align: top
+		width: 49%
+		text-align: center
+	&__title
+		padding-bottom: 30px
+	&__img
+		display: inline-block
+		width: 100%
+	&__btn
+		margin-top: 50px
+		margin-bottom: 20px
+		width: 230px
+		height: 53px
+		+FM
+		font-size: 13px
+		text-transform: uppercase
+		background-color: $dark-blue
+		color: $light-blue
+		transition: all .1s linear
+		&:hover
+			color: $white
+			background-color: $blue-tel
+
+
+.tabs
+	max-width: 474px
+	margin: auto
+	+clr
+	&__btns
+		float: left
+	&__tab
+		display: block
+		width: 47px
+		height: 42px
+		+FM
+		font-size: 16px
+		line-height: 42px
+		color: $white
+		text-align: center
+	&__content
+		max-width: 427px
+		float: right
+	&__item
+		display: none
+		padding: 18px 20px
+	&__txt
+		width: 100%
+		padding-bottom: 20px
+		line-height: 38px
+		+clr
+	&__title
+		float: left
+		width: auto
+		padding: 0 9px
+		+FD
+		font-size: 22px
+	&__type
+		float: right
+		+FD
+		font-size: 14px
+		text-transform: uppercase
+	&__size
+		display: inline-block
+		padding: 0 12px
+		margin-left: 15px
+		font-size: 20px
+		color: $white
+		background-color: $blue
+	&__img
+		width: 100%
+		img
+			max-width: 392px
+			max-height: 500px
+.is-active
+	color: $black

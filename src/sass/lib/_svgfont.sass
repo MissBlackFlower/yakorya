@@ -1,0 +1,41 @@
+@font-face
+	font-family: "svgfont"
+	src: url('fonts/svgfont.eot')
+	src: url('fonts/svgfont.eot?#iefix') format('eot'), url('fonts/svgfont.woff') format('woff'), url('fonts/svgfont.woff2') format('woff2'), url('fonts/svgfont.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal
+
+$icon-call: "\EA01"
+$icon-cam: "\EA02"
+$icon-close: "\EA03"
+$icon-done: "\EA04"
+$icon-gift: "\EA05"
+$icon-send: "\EA06"
+
+
+%icon
+	font-family: "svgfont"
+	font-style: normal
+	font-weight: normal
+	text-rendering: auto
+	speak: none
+	line-height: 1
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+.icon, [class^="icon-"], [class*=" icon-"]
+	@extend %icon
+	display: inline-block
+
+.icon-call:before
+	content: $icon-call
+.icon-cam:before
+	content: $icon-cam
+.icon-close:before
+	content: $icon-close
+.icon-done:before
+	content: $icon-done
+.icon-gift:before
+	content: $icon-gift
+.icon-send:before
+	content: $icon-send

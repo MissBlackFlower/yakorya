@@ -1,0 +1,479 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>«Якоря»</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="theme-color" content="#fff">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="stylesheet" media="all" href="css/style.css" >
+	<link rel="stylesheet" href="https://developers.google.com/maps/documentation/javascript/demos/demos.css">
+
+	<script src="js/app.js"></script>
+</head>
+<body>
+<!-- BEGIN  out-->
+<div class="out">
+	<!-- BEGIN header -->
+	<header class="header js-header">
+		<a href="#" class="btn-menu js-btn-menu">&#9776;</a>
+		<div class="menu js-menu">
+			<ul class="menu__list">
+				<li class="menu__cell"><a href="#pluses" class="menu__link js-link">Преимущества</a></li>
+				<li class="menu__cell"><a href="#gallery" class="menu__link js-link">Галерея</a></li>
+				<li class="menu__cell"><a href="#plan" class="menu__link js-link">Планировка</a></li>
+				<li class="menu__cell">
+					<div class="tel">
+						<a href="tel:+380553331123" class="tel__namb">+38 (055) 333-11-23</a>
+						<button type="button" class="tel__call js-popup">
+							<i class="icon icon-call"></i>Обратный звонок
+						</button>
+					</div>
+				</li>
+				<li class="menu__cell"><a href="#map" class="menu__link js-link">Расположение</a></li>
+				<li class="menu__cell"><a href="#about" class="menu__link js-link">О застройщике</a></li>
+				<li class="menu__cell"><a href="#footer" class="menu__link js-link">Контакты</a></li>
+			</ul>
+		</div>
+	</header>
+	<!-- end header -->
+	
+	<!-- BEGIN banner -->
+	<section class="banner">
+		<div class="banner__txt">
+			<div class="banner__logo"><i class="icon icon-logo"></i></div>
+			<h1 class="banner__title">Новый микрорайон в Одессе</h1>
+			<span class="banner__subtitle">Сдача 1-й квартал 2016</span>
+			<button  type="button" class="banner__btn btn-gift">
+				<i class="icon icon-gift"></i>
+				<span>Новогоднее предложение!</span>
+			</button>
+		</div>
+	</section>
+	<!-- end banner -->
+	
+	<!-- BEGIN info -->
+	<section class="info">
+		<div class="info__wrap">
+			<h2 class="info__title">Микрорайон «Якоря»</h2>
+			<div class="info__col">
+				<span class="info__main">Микрорайон «Якоря» - создан для комфортной, спокойной жизни в «тихом» районе большого города, на пересечении улиц Генерала Бочарова и Академика Сахарова. Состоит из двух 5-ти этажных 3-х секционных домов, с просторной придомовой территорией.</span>
+				<div class="info__queue">
+					<div class="info__numb"><i class="icon icon_first "></i></div>
+					<span class="info__queue-txt">Первая очередь строительства уже подходит к концу и будет сдана в 1 квартале 2016 г.</span>
+				</div>
+				<blockquote class="info__note">Приобретая жилье у нас, Вы получаете не просто квадратные метры, <b>а ощущение комфорта, спокойствия и уюта!</b></blockquote>
+			</div>
+			<div class="info__col">
+				<ul class="facts">
+					<li class="facts__item">
+						<div class="facts__img"><i class="icon icon_sun"></i></div>
+						<div class="facts__txt">
+							<h5 class="facts__title">Уют</h5>
+							<p>Большое количество зелени, интересная детская площадка, оборудованные места для отдыха, тихие дворики соседних домов создают атмосферу покоя, располагают к отдыху. При этом микрорайон «Якоря» находится в непосредственной близости от побережья Черного моря.</p>
+						</div>
+					</li>
+					<li class="facts__item">
+						<div class="facts__img"><i class="icon icon_comfort"></i></div>
+						<div class="facts__txt">
+							<h5 class="facts__title">Комфорт</h5>
+							<p>В данном микрорайоне есть все, что необходимо для удобной, беззаботной жизни: торговые и развлекательные центры, кинотеатры, рестораны, центр детского досуга, спортивные учреждения, фитнес-студии, школы, детские сады, офисы крупных предприятий. Для тех, у кого есть дети спроектирован детский сад на 100 мест и школа на 1000 учащихся.</p>
+						</div>
+					</li>
+					<li class="facts__item">
+						<div class="facts__img"><i class="icon icon_safety"></i></div>
+						<div class="facts__txt">
+							<h5 class="facts__title">Безопасность</h5>
+							<ul class="facts__list" type="disc">
+								<li>охраняемая, закрытая придомовая территория;</li>
+								<li>видеонаблюдение в парадных.</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- BEGIN circs -->
+		<div class="circs">
+			<h3 class="circs__title">Удобные условия покупки</h3>
+			<ul class="circs__list">
+				<li class="circs__cell">
+					<span class="circs__step">1</span>
+					<p class="circs__txt">
+						<b>10% первый взнос +</b><br>
+						<span>12 месяцев рассрочка</span>
+					</p>
+				</li>
+				<li class="circs__cell">
+					<span class="circs__step">2</span>
+					<p class="circs__txt">
+						<b>50% первый взнос +</b><br>
+						<span>50% после сдачи дома</span>
+					</p>
+				</li>
+				<li class="circs__cell">
+					<span class="circs__step">3</span>
+					<p class="circs__txt">
+						<b>100% оплата + </b><br>
+						<span>фиксированный курс</span>
+					</p>
+				</li>
+			</ul>
+		</div>
+		<!-- end circs -->
+	</section>
+	<!-- end info -->
+	
+	<!-- BEGIN pluses -->
+	<div class="pluses" id="advantages">
+		<div class="pluses__wrap">
+			<h3 class="pluses__title">Преимущества</h3>
+			<div class="pluses__wrap">
+				<div class="pluses__item">
+					<div class="pluses__img"><img src="img/pluses/lift.png" alt="" /></div>
+					<p class="pluses__txt">5-ти этажные дома с лифтом</p>
+				</div>
+				<div class="pluses__item">
+					<div class="pluses__img"><img src="img/pluses/door.png" alt="" /></div>
+					<p class="pluses__txt">Всего 4 квартиры на площадке</p>
+				</div>
+				<div class="pluses__item">
+					<div class="pluses__img"><img src="img/pluses/platen.png" alt="" /></div>
+					<p class="pluses__txt">Квартиры сдаются под чистовую отделку</p>
+				</div>
+				<div class="pluses__item">
+					<div class="pluses__img"><img src="img/pluses/wood.png" alt="" /></div>
+					<p class="pluses__txt">Зеленый микрорайон</p>
+				</div>
+				<div class="pluses__item">
+					<div class="pluses__img"><img src="img/pluses/umbel.png" alt="" /></div>
+					<p class="pluses__txt">10 мин езды до побережья</p>
+				</div>
+				<div class="pluses__item">
+					<div class="pluses__img"><img src="img/pluses/car.png" alt="" /></div>
+					<p class="pluses__txt">Гостевая, автостоянка и паркинг</p>
+				</div>
+				<div class="pluses__item">
+					<div class="pluses__img"><img src="img/pluses/cam.png" alt="" /></div>
+					<p class="pluses__txt">Ограждение, охрана, видеонаблюдение</p>
+				</div>
+				<div class="pluses__item">
+					<div class="pluses__img"><img src="img/pluses/counter.png" alt="" /></div>
+					<p class="pluses__txt">Автономная газовая котельная, счетчики и водомеры</p>
+				</div>
+				<div class="pluses__item">
+					<div class="pluses__img"><img src="img/pluses/water.png" alt="" /></div>
+					<p class="pluses__txt">Резервуары запаса воды</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end pluses -->
+	
+	<!-- BEGIN gallery -->
+	<div class="gallery" id="gallery">
+		<h3 class="gallery__title">Фотографии микрорайона</h3>
+		<div class="gallery__wrap js-gallery">
+			<a href="img/gallery/img1.png" class="gallery__item js-photo" rel="group" style="background-image: url(img/gallery/img1.png)"></a>
+			<a href="img/gallery/img2.png" class="gallery__item js-photo" rel="group" style="background-image: url(img/gallery/img2.png)"></a>
+			<a href="img/gallery/img3.png" class="gallery__item js-photo" rel="group" style="background-image: url(img/gallery/img3.png)"></a>
+			<a href="img/gallery/img4.png" class="gallery__item js-photo" rel="group" style="background-image: url(img/gallery/img4.png)"></a>
+			<a href="img/gallery/img5.png" class="gallery__item js-photo" rel="group" style="background-image: url(img/gallery/img5.png)"></a>
+			<a href="img/gallery/img6.png" class="gallery__item js-photo" rel="group" style="background-image: url(img/gallery/img6.png)"></a>
+		</div>
+	</div>
+	
+	<!-- end gallery -->
+	
+	<!-- BEGIN plan  -->
+	<section class="plan" id="plan">
+		<div class="plan__wrap">
+			<div class="plan__col">
+					<h3 class="plan__title">План этажа</h3>
+				<div class="plan__img">
+					<map name="tabs-map">
+						<area class="js-tab-link" data-tab="1" shape="poly" coords="0,34.5 162,34.5 162,149.5 141.5,149.5 141.5,190.5 89.5,190.5 89.5,304 0,304" href="#1" alt="Планировка1">
+						<area class="js-tab-link" data-tab="2" shape="poly" coords="237,199.5 237,338.5 90,338.5 90,193.5 163.5,193.5 194,193.5 194,200.5 " href="#2" alt="Планировка2">
+						<area class="js-tab-link" data-tab="3" shape="poly" coords="382.5,193.5 382.5,338.5 239.5,338.5 239.5,197.5 281,197.5 281.5,193.5" href="#3" alt="Планировка3">
+						<area class="js-tab-link" data-tab="4" shape="poly" coords="313,34.5 471,34.5 471,306.5 385,306.5 385.5,193.5 332,193.5 332,146 313,147" href="#4" alt="Планировка4">
+					</map>
+					<img usemap="tabs-map" src="img/plans/plan-floor.png" alt="plan">
+				</div>
+				<button type="button" class="plan__btn">
+					<i class="icon icon-cam"></i>смотреть веб камеру
+				</button>
+			</div>
+			<div class="plan__col">
+				<div class="tabs">
+					<div class="tabs__btns">
+						<button class="tabs__tab js-tab-btn" type="button" name="button" data-tab="1" style="background-color: #fff343">1</button>
+						<button class="tabs__tab js-tab-btn" type="button" name="button" data-tab="2" style="background-color: #a9d5dd">2</button>
+						<button class="tabs__tab js-tab-btn" type="button" name="button" data-tab="3" style="background-color: #f3ca9c">3</button>
+						<button class="tabs__tab js-tab-btn" type="button" name="button" data-tab="4" style="background-color: #b4d38b">4</button>
+					</div>
+					<div class="tabs__content">
+						<div class="tabs__item js-tab-content" data-tab="1" style="background-color: #fff343">
+							<div class="tabs__txt">
+								<h6 class="tabs__title">Планировка 1</h6>
+								<span class="tabs__type">двухкомнатная<span class="tabs__size">58.1</span></span>
+							</div>
+							<div class="tabs__img">
+								<img src="img/plans/plan1.png" alt="Планировка" />
+							</div>
+						</div>
+						<div class="tabs__item js-tab-content" data-tab="2" style="background-color: #a9d5dd">
+							<div class="tabs__txt">
+								<h6 class="tabs__title">Планировка 2</h6>
+								<span class="tabs__type">Однокомнатная<span class="tabs__size">36.9</span></span>
+							</div>
+							<div class="tabs__img">
+								<img src="img/plans/plan1.png" alt="Планировка" />
+							</div>
+						</div>
+						<div class="tabs__item js-tab-content" data-tab="3" style="background-color: #f3ca9c">
+							<div class="tabs__txt">
+								<h6 class="tabs__title">Планировка 3</h6>
+								<span class="tabs__type">Однокомнатная<span class="tabs__size">36.9</span></span>
+							</div>
+							<div class="tabs__img">
+								<img src="img/plans/plan1.png" alt="Планировка" />
+							</div>
+						</div>
+						<div class="tabs__item js-tab-content" data-tab="4" style="background-color: #b4d38b">
+							<div class="tabs__txt">
+								<h6 class="tabs__title">Планировка 4</h6>
+								<span class="tabs__type">двухкомнатная<span class="tabs__size">58.1</span></span>
+							</div>
+							<div class="tabs__img">
+								<img src="img/plans/plan1.png" alt="Планировка" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end plan -->
+	
+	<!-- BEGIN map  -->
+	<div id="map" class="map"></div>
+	<!-- end map -->
+	<!-- BEGIN about -->
+	<section class="about" id="about">
+		<div class="about__wrap">
+			<h3 class="about__title">О застройщике</h3>
+			<div class="about__col">
+				<blockquote class="about__note">
+					<img src="img/alebor.svg" alt="ALEBOR GROUP">
+					<p class="about__note-txt">Застройщиком является Строительная Компания "Новый район", которая входит в состав ALEBOR GROUP.</p>
+				</blockquote>
+				<p class="about__invest">Мы инвестируем собственные средства в строительство наших проектов.<br><b>С нами Вы можете быть уверены в том, что все дома будут своевременно достроены и Вы получите ключи от Вашей квартиры точно в срок.</b></p>
+			</div>
+			<div class="about__col">
+				<div class="about__txt">
+					<h6 class="about__sub-title">ALEBOR GROUP - мощная группа компаний, которая уже много лет успешно работает на зерновом рынке Украины.</h6>
+					<p>Миссия компании - улучшение качества жизни горожан, благодаря созданию максимально комфортных условий проживания, высокого качества недвижимости, объектов инфраструктуры, а также максимальная защита интересов инвесторов жилой недвижимости.</p>
+					<p>Имея многолетний опыт строительства масштабных проектов, наша команда профессионалов обладает достаточным опытом в обеспечении европейских стандартов качества строительства жилья.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end about -->
+	
+	<!-- BEGIN footer  -->
+	<footer class="footer" id="footer">
+		<div class="footer__txt">
+			<button  type="button" class="footer__btn btn-gift">
+				<i class="icon icon-gift"></i>
+				<span>Новогоднее предложение!</span>
+			</button>
+			<ul class="footer__list">
+				<li class="footer__title"><h4>Контакты отдела продаж</h4></li>
+				<li>г. Одесса, ул. Ген. Бочарова, 50</li>
+				<li>Телефон: <a class="footer__link" href="tel:0487015858">(048) 701-58-58</a></li>
+				<li>График 10.00-19.00 без выходных</li>
+			</ul>
+			<ul class="footer__list">
+				<li class="footer__title"><h4>Документация</h4></li>
+				<li><a href="#" class="footer__link">Название документа.doc</a></li>
+				<li><a href="#" class="footer__link">Название документа_2.doc</a></li>
+			</ul>
+		</div>
+		<div class="footer__form">
+			<form>
+				<div class="form">
+					<p class="form__title">У вас есть вопрос?</p>
+						<input type="text" placeholder="Ваше имя" class="form__name">
+						<input type="email" placeholder="E-mail" class="form__mail">
+						<textarea placeholder="Сообщение" class="form__msg"></textarea>
+						<button  type="submit" class="form__btn btn-send">
+							<i class="icon icon-send"></i>Отправить сообщение
+						</button>
+				</div>
+			</form>
+		</div>
+	</footer>
+	<!-- end footer -->
+	
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzg_xFOu0zuLoNk0cLR37qfXDzXpyRPr4&callback=initMap" async defer></script>
+</div>
+<!-- END out-->
+<script>
+	function initMap() {
+		var myLatLng = {lat: 46.469349, lng: 30.731423};
+
+	// Create a map object and specify the DOM element for display.
+		var map = new google.maps.Map(document.getElementById('map'), {
+				center: myLatLng,
+				scrollwheel: false,
+				zoom: 15,
+				mapTypeId: google.maps.MapTypeId.ROADMAP,
+				disableDefaultUI: true
+		});
+
+		var styles = [
+					{
+						elementType: 'geometry',
+						stylers: [{color: '#f5f5f5'}]
+					},
+					{
+						elementType: 'labels.icon',
+						stylers: [{visibility: 'off'}]
+					},
+					{
+						elementType: 'labels.text.fill',
+						stylers: [{color: '#616161'}]
+					},
+					{
+						elementType: 'labels.text.stroke',
+						stylers: [{color: '#f5f5f5'}]
+					},
+					{
+						featureType: 'administrative.land_parcel',
+						elementType: 'labels.text.fill',
+						stylers: [{color: '#bdbdbd'}]
+					},
+					{
+						featureType: 'poi',
+						elementType: 'geometry',
+						stylers: [{color: '#eeeeee'}]
+					},
+					{
+						featureType: 'poi',
+						elementType: 'labels.text.fill',
+						stylers: [{color: '#757575'}]
+					},
+					{
+						featureType: 'poi.park',
+						elementType: 'geometry',
+						stylers: [{color: '#e5e5e5'}]
+					},
+					{
+						featureType: 'poi.park',
+						elementType: 'labels.text.fill',
+						stylers: [{color: '#9e9e9e'}]
+					},
+					{
+						featureType: 'road',
+						elementType: 'geometry',
+						stylers: [{color: '#ffffff'}]
+					},
+					{
+						featureType: 'road.arterial',
+						elementType: 'labels.text.fill',
+						stylers: [{color: '#757575'}]
+					},
+					{
+						featureType: 'road.highway',
+						elementType: 'geometry',
+						stylers: [{color: '#dadada'}]
+					},
+					{
+						featureType: 'road.highway',
+						elementType: 'labels.text.fill',
+						stylers: [{color: '#616161'}]
+					},
+					{
+						featureType: 'road.local',
+						elementType: 'labels.text.fill',
+						stylers: [{color: '#9e9e9e'}]
+					},
+					{
+						featureType: 'transit.line',
+						elementType: 'geometry',
+						stylers: [{color: '#e5e5e5'}]
+					},
+					{
+						featureType: 'transit.station',
+						elementType: 'geometry',
+						stylers: [{color: '#eeeeee'}]
+					},
+					{
+						featureType: 'water',
+						elementType: 'geometry',
+						stylers: [{color: '#c9c9c9'}]
+					},
+					{
+						featureType: 'water',
+						elementType: 'labels.text.fill',
+						stylers: [{color: '#9e9e9e'}]
+					}
+				];
+
+	// Set the map's style
+		map.setOptions({styles: styles});
+
+	// Create a marker and set its position.
+		var image = 'img/markers/wood.png';
+		var woodMarker1 = new google.maps.Marker({
+			position: {lat: 46.466027, lng: 30.730164},
+			map: map,
+			icon: image,
+			title: 'park'
+		});
+		var woodMarker2 = new google.maps.Marker({
+			position: {lat: 46.467030, lng: 30.744618},
+			map: map,
+			icon: image,
+			title: 'park'
+		});
+
+		var image = 'img/markers/spa.png';
+		var spaMarker1 = new google.maps.Marker({
+			position: {lat: 46.469563, lng: 30.708423},
+			map: map,
+			icon: image,
+			title: 'spa'
+		});
+		var spaMarker2 = new google.maps.Marker({
+			position: {lat: 46.471800, lng: 30.737560},
+			map: map,
+			icon: image,
+			title: 'spa'
+		});
+
+		var image = 'img/markers/house.png';
+		var houseMarker1 = new google.maps.Marker({
+			position: {lat: 46.471675, lng: 30.747182},
+			map: map,
+			icon: image,
+			title: 'house'
+		});
+		var houseMarker2 = new google.maps.Marker({
+			position: {lat: 46.466191, lng: 30.715355},
+			map: map,
+			icon: image,
+			title: 'house'
+		});
+		var houseMarker3 = new google.maps.Marker({
+			position: {lat: 46.472263, lng: 30.717987},
+			map: map,
+			icon: image,
+			title: 'house'
+		});
+	}
+</script>
+
+</body>
+</html>

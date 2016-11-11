@@ -1,0 +1,72 @@
+$icons: (0:0)
+$icons: map-merge($icons,(comfort: (X: -266px, Y:0px, W: 83px, H: 93px, TW: 349px, TH: 249px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(first: (X: -266px, Y:-97px, W: 26px, H: 62px, TW: 349px, TH: 249px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(logo: (X: 0px, Y:0px, W: 168px, H: 168px, TW: 349px, TH: 249px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(safety: (X: 0px, Y:-172px, W: 80px, H: 77px, TW: 349px, TH: 249px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(sun: (X: -172px, Y:0px, W: 90px, H: 99px, TW: 349px, TH: 249px, IMG: '../img/icons.png')))
+
+
+// Gets an attribute from the sass map
+@function icon-attr($icon, $attr)
+	$icon: map-get($icons, $icon)
+	@return map-get($icon, $attr)
+
+@mixin sprite($iconName)
+	background-image: url(icon-attr($iconName, IMG))
+	width: icon-attr($iconName, W)
+	height: icon-attr($iconName, H)
+	background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+@mixin sprite-position($iconName)
+	background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+@mixin sprite-retina($iconName)
+	background-image: url(icon-attr($iconName, IMG))
+	$width: icon-attr($iconName, W)
+	$height: icon-attr($iconName, H)
+	width: $width/2
+	height: $height/2
+	$x: icon-attr($iconName, X)
+	$y: icon-attr($iconName, Y)
+	background-position: $x/2 $y/2
+	$tw: icon-attr($iconName, TW) 	
+	$th: icon-attr($iconName, TH)
+	background-size: $tw/2 $th/2  	
+
+
+@mixin s($i)
+	+sprite($i)
+@mixin sp($i)
+	+sprite-position($i)
+@mixin sr($i)
+	+sprite-retina($i)	
+
+//
+//.icon-comfort
+//	width: 83px
+//	height: 93px
+//	background-image: url('../img/icons.png')
+//	background-position: -266px 0px
+//
+//.icon-first
+//	width: 26px
+//	height: 62px
+//	background-image: url('../img/icons.png')
+//	background-position: -266px -97px
+//
+//.icon-logo
+//	width: 168px
+//	height: 168px
+//	background-image: url('../img/icons.png')
+//	background-position: 0px 0px
+//
+//.icon-safety
+//	width: 80px
+//	height: 77px
+//	background-image: url('../img/icons.png')
+//	background-position: 0px -172px
+//
+//.icon-sun
+//	width: 90px
+//	height: 99px
+//	background-image: url('../img/icons.png')
+//	background-position: -172px 0px
+//
