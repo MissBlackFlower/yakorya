@@ -1,5 +1,34 @@
 $(document).ready(function() {
 
+	var popup = $(".js-popup"),
+			popupWrap = $(".js-popup-in"),
+			btnClose = $(".js-close"),
+			btnCall = $(".js-popup-call"),
+			popupCall = $(".js-call"),
+			btnOffer = $(".js-popup-offer"),
+			popupOffer = $(".js-offer"),
+			btnDone = $(".js-popup-done"),
+			popupDone = $(".js-done"),
+			btnCam = $(".js-popup-cam"),
+			popupCam = $(".js-cam");
+
+	var initPopup = function (btn, content) {
+		btn.on('click', function(e) {
+			if (content.length) {
+				$("body").append('<div class="popup js-popup">'
+													+'<div class="popup__in">'
+													+'<div class="popup__content js-popup-in">'
+													+'<button class="popup__close js-close" type="button" name="close"></button>'
+													+'</div></div></div>');
+				content.clone().appendTo($(".js-popup-in"));
+			}
+		});
+	};
+
+	initPopup(btnCall, popupCall);
+	initPopup(btnOffer, popupOffer);
+	initPopup(btnDone, popupDone);
+	initPopup(btnCam, popupCam);
 
 	var gallery = $(".js-gallery"),
 			photo = $(".js-photo");
@@ -56,8 +85,7 @@ $(document).ready(function() {
 		e.preventDefault();
 	});
 
-
-
+//=include animations.js
 
 	initMap();
 });

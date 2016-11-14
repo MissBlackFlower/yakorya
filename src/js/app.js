@@ -1,3 +1,11 @@
 //=include lib/jquery.js
 //=include lib/slick.min.js
+//=include lib/TweenMax.min.js
+//=include lib/TimelineLite.min.js
+//=include lib/TextPlugin.min.js
+//=include lib/CSSPlugin.min.js
+//=include lib/ScrollToPlugin.min.js
+//=include lib/ScrollMagic.min.js
+//=include lib/animation.gsap.min.js
+//=include lib/debug.addIndicators.min.js
 //=include common.js
